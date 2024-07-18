@@ -1,5 +1,6 @@
 :root{
     --font-family: Calibri;
+    --buttoncolor:rgb(212, 0, 255);
 }
 body{
     overflow-x: hidden;
@@ -62,6 +63,12 @@ button{
     border-radius: 40px;
     font-family: var(--font-family);
     font-size: 20px;
+    /*hover*/
+    transition: all 0.3s;
+}
+button:hover {
+    transform: translateY(-5px);
+    background-color: var(--buttoncolor);
 }
 input{  
     position: relative;
