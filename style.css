@@ -1,10 +1,17 @@
 :root{
     --font-family: Calibri;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 .container{
+    position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    top:0;
+    right:0;
     padding: 2rem;
     border: 4rem;
     height: 55rem;
@@ -15,6 +22,7 @@
 }
 header{
     text-align: center;
+    font-size: 7rem;
     font-size: 5rem;
     background: linear-gradient(to right,yellow,rgb(3, 247, 3));
     -webkit-background-clip: text;
@@ -26,7 +34,6 @@ header{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    font-size: 7rem;
     width: 20rem;
     height: 30rem;
     padding: 4rem;
@@ -56,7 +63,7 @@ button{
     font-family: var(--font-family);
     font-size: 20px;
 }
-input{
+input{  
     position: relative;
     height: 30px;
     border-radius: 30px;
@@ -64,3 +71,28 @@ input{
     text-align: center;
     font-family: var(--font-family);
 }
+/*not done yet*/
+@media (max-width: 750px) { 
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+         width: 100%; 
+      padding: 1px;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      width: 60%; 
+      padding: 4rem;
+      text-align: center; 
+    } 
+    .svg{
+        position: absolute;
+        height: 30rem;
+    padding: 5rem;
+    width: 9rem;
+    opacity: 90%;
+    }
+  } 
