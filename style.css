@@ -37,27 +37,31 @@ header{
     flex-direction: column;
     width: 20rem;
     height: 30rem;
-    padding: 4rem;
+    padding: 5rem;
     border-radius: 40px;
     gap: 10px;
     border-style: solid;
+    background-color: #06ffe241;
     border-width: 3px;
-    border-color: rgb(249, 253, 249);
+    border-color: rgb(255, 255, 255);
 }
 .svg{
-    position: absolute;
+    display: flex;
     justify-content: center;
-    height: 500px;
-    padding: 90px;
-    width: 9rem;
+    height: 6rem;
+    padding: 5px;
+    width: 310px;
     opacity: 90%;
 }
 button{
     position: relative;
+    display: flex;
+    justify-content: center;
     color:#490652;
     box-shadow:3px 4px #26012b;
     height: 3rem;
     width: 7rem;
+    padding: 7px;
     top: 1rem;
     left: 6rem;
     border-radius: 40px;
@@ -69,14 +73,16 @@ button{
 button:hover {
     transform: translateY(-5px);
     background-color: var(--buttoncolor);
+    color: rgb(229, 235, 240);
 }
 input{  
     position: relative;
-    height: 30px;
-    border-radius: 30px;
-    width: 50xp;
-    text-align: center;
+    border-radius: 10px;
+    height: 1px;
+    padding: 20px;
+    text-align: start;
     font-family: var(--font-family);
+    font-size: 1rem;
 }
 /*not done yet*/
 @media (max-width: 750px) { 
@@ -96,10 +102,10 @@ input{
       text-align: center; 
     } 
     .svg{
-        position: absolute;
-        height: 30rem;
-    padding: 5rem;
-    width: 9rem;
+        display: flex;
+        height: 4rem;
+    padding: 1px;
+    width: 300px;
     opacity: 90%;
     }
   } 
