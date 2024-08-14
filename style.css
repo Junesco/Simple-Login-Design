@@ -5,20 +5,19 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+    background-image:linear-gradient(
+        to left,#760885,rgb(91, 7, 247),rgb(196, 12, 141));
 }
 .container{
     position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top:0;
-    right:0;
     padding: 2rem;
     border: 4rem;
-    height: 55rem;
-    width: 116rem;
-    background-image:linear-gradient(
-        to left,#760885,rgb(91, 7, 247),rgb(196, 12, 141));
+    height: 45rem;
+    width: 1000rem;
+    max-width: 95%;
     font-family: var(--font-family);
 }
 header{
@@ -30,7 +29,7 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: var(--font-family);
-}
+} 
 .login{
     display:flex;
     justify-content: center;
@@ -84,28 +83,4 @@ input{
     font-family: var(--font-family);
     font-size: 1rem;
 }
-/*not done yet*/
-@media (max-width: 750px) { 
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-         width: 100%; 
-      padding: 1px;
-    }
-    .login {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      width: 60%; 
-      padding: 4rem;
-      text-align: center; 
-    } 
-    .svg{
-        display: flex;
-        height: 4rem;
-    padding: 1px;
-    width: 300px;
-    opacity: 90%;
-    }
-  } 
+
